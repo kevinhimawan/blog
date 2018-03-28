@@ -31,7 +31,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 // });
 
 // Database
-const dbURL = 'mongodb://kevinhimawan:12345@ds223509.mlab.com:23509/blogdb'
+const dbURL = 'mongodb://kevin:12345@ds123919.mlab.com:23919/blogdb'
 mongoose.connect(dbURL,(err)=>{
   if(!err){
     console.log(`Connected to database`)

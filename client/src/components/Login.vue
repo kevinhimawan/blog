@@ -79,7 +79,6 @@ export default {
         password: this.password_signup
       }
       axios.post('http://localhost:3000/registration/signup', usersignup).then(response => {
-        console.log(response)
         localStorage.setItem('token', response.data.token)
         routes.push({
           path: '/'

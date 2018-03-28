@@ -20,7 +20,6 @@ module.exports = {
                 const newUser = new User({
                     username, email, password: hash
                 })
-        
                 newUser.save()
                 .then(userData=>{
                     const token = jwt.sign({_id:userData._id, email: userData.email},process.env.secret)  

@@ -5,7 +5,7 @@
         <h5 class="card-title">{{blog.title}}</h5>
         <p class="card-text">{{blog.content}}</p>
       </div>
-      <img class="card-img-top" :src="blog.image.path" :alt="blog.image.name">
+      <img class="card-img-top" :src="blog.image.path" :alt="blog.image.path">
     </div>
   </div>
 </template>

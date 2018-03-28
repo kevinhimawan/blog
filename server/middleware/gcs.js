@@ -1,11 +1,11 @@
 const Storage = require("@google-cloud/storage")
 const config = {
-    CLOUD_BUCKET: 'blog.kevinhimawan.xyz',
-    PROJECT_ID: 'e-commerce-198004',
+    CLOUD_BUCKET: 'image.kevinhimawan.xyz',
+    PROJECT_ID: '"e-commerce-198004',
 }
 const storage = Storage({
     projectId: config.PROJECT_ID,
-    keyFilename: 'e-commerce-019805aec045.json'
+    keyFilename: 'e-commerce-a7583e90236b.json'
 });
 
 // set which bucket

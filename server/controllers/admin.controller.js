@@ -6,9 +6,11 @@ const User = require('../model/user.model')
 module.exports = {
   createBlog(req,res){
     const file = req.file
+    console.log(file)
     const newImage = new Image({
       name: file.originalname, path: file.cloudStoragePublicUrl
     })
+    console.log(newImage)
     newImage.save()
     .then(newImageData=>{
       const decode = jwt.verify(req.body.token,process.env.secret)
